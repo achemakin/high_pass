@@ -1,0 +1,101 @@
+<header class="header">
+  <div class="container header__container">
+    <a class="logo header__logo">
+      <picture>
+        <source media="(max-width: 530px)" type="image/avif"
+          srcset="img/logo-small@1x.avif 1x, img/logo-small@2x.avif 2x">
+
+        <source media="(max-width: 1200px)" type="image/avif"
+          srcset="img/logo-tablet@1x.avif 1x, img/logo-tablet@2x.avif 2x">
+
+        <source srcset="img/logo@1x.avif 1x, img/logo@2x.avif 2x" type="image/avif">
+
+        <source media="(max-width: 530px)" type="image/webp"
+          srcset="img/logo-small@1x.webp 1x, img/logo-small@2x.webp 2x">
+
+        <source media="(max-width: 1200px)" type="image/webp"
+          srcset="img/logo-tablet@1x.webp 1x, img/logo-tablet@2x.webp 2x">
+
+        <source srcset="img/logo@1x.webp 1x, img/logo@2x.webp 2x" type="image/webp">
+
+        <source media="(max-width: 530px)" srcset="img/logo-small@1x.jpg 1x, img/logo-small@2x.jpg 2x">
+
+        <source media="(max-width: 1200px)" srcset="img/logo-tablet@1x.png 1x, img/logo-tablet@2x.png 2x">
+
+        <img loading="lazy" src="img/logo@1x.png" srcset="img/logo@2x.png 2x" class="image" width="630"
+          height="300" alt="Фотография">
+      </picture>
+    </a>
+
+    <nav class="nav header__nav" title="Меню" data-menu>
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false"  data-burger>
+        <span class="burger__line"></span>
+      </button>
+
+      <ul class="nav__list list-reset" >
+        <li class="nav__item">
+          <a href="#about" class="nav__link" data-menu-item>О студии</a>
+        </li>
+
+        <li class="nav__item">
+          <a href="#projects" class="nav__link" data-menu-item>Наши проекты</a>
+        </li>
+
+        <li class="nav__item">
+          <a href="#" class="nav__link" data-menu-item>Услуги</a>
+        </li>
+
+        <li class="nav__item">
+          <a href="#" class="nav__link" data-menu-item>Мастер-классы</a>
+        </li>
+
+        <li class="nav__item">
+          <a href="#contacts" class="nav__link" data-menu-item>Контакты</a>
+        </li>
+      </ul>
+
+      <a href="tel:+749542423532" class="tel nav__tel" data-menu-item>
+        <svg class="tel__svg" width="22" height="22">
+          <use xlink:href="img/sprite.svg#mdi_call"></use>
+        </svg>
+        +7 (495) 42-423-532
+      </a>
+    </nav>
+
+    <ul class="social list-reset header__social" title="Социальные сети">
+      <li class="social__item">
+        <a href="#" target="_blank" class="social__link social__link--fb" aria-label="Наша страничка в Фейсбуке">
+          <svg class="social__icon" width="30" height="30">
+            <use xlink:href="img/sprite.svg#inst"></use>
+          </svg>
+        </a>
+      </li>
+
+      <li class="social__item">
+        <a href="#" target="_blank" class="social__link social__link--vk" aria-label="Наша страничка во Вконтакте">
+          <svg class="social__icon" width="30" height="30">
+            <use xlink:href="img/sprite.svg#fb"></use>
+          </svg>
+        </a>
+      </li>
+
+      <li class="social__item">
+        <a href="#" target="_blank" class="social__link social__link--vk" aria-label="Наша страничка во Вконтакте">
+          <svg class="social__icon" width="30" height="30">
+            <use xlink:href="img/sprite.svg#vk"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <div class="search header__search js-search">
+      <button class="search__button js-search-button" type="button" aria-label="Поиск">
+        <svg class="search__svg" width="25" height="25">
+          <use xlink:href="img/sprite.svg#search"></use>
+        </svg>
+      </button>
+
+      <input type="text" class="search__input js-search-input" placeholder="Что будем искать?">
+    </div>
+  </div>
+</header>

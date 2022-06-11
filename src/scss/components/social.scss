@@ -1,0 +1,28 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  gap: 20px;
+
+  &__icon {
+    fill: var(--color-leadbelcher);
+    transition: fill 0.3s ease-in-out;
+    display: block;
+  }
+
+  &__link {
+    outline: none;
+
+    &:focus-visible .social__icon {
+      fill: var(--color-beef-patties);
+    }
+
+    &:hover:not(:focus-visible) .social__icon {
+      fill: var(--color-bright-orange);
+    }
+
+    &:active:not(:focus-visible) .social__icon {
+      fill: var(--color-sinopia);
+    }
+  }
+}

@@ -1,0 +1,82 @@
+.form-label {
+  position: relative;
+
+  .just-validate-error-label {
+    position: absolute;
+    top: 4px;
+    left: 23px;
+    font-size: 9px;
+    color: var(--color-coral-commander);
+  }
+
+  .just-validate-error-field {
+    border-color: var(--color-coral-commander);
+  }
+}
+
+.input {
+  padding: 15px 23px;
+  width: 100%;
+  font-size: 16px;
+  border: 1px solid transparent;
+  outline: none;
+  transition: border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+  &::placeholder {
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+  }
+
+  &.focus-visible {
+    border-color: var(--color-bright-orange);
+  }
+
+  &:hover:not(.focus-visible) {
+    color: var(--color-bright-orange);
+
+    &::placeholder {
+      color: var(--color-bright-orange);
+    }
+  }
+
+  &--dark {
+    color: var(--light-color);
+    background-color: var(--color-shadowed-steel);
+    border-color: var(--color-shadowed-steel);
+
+    &::placeholder {
+      color: var(--color-leadbelcher);
+    }
+
+    &.focus-visible::placeholder {
+      color: var(--color-leadbelcher);
+    }
+  }
+
+  &--light {
+    color: var(--color-lead);
+    background-color: var(--color-snowbank);
+    border-color: var(--color-snowbank);
+
+    &::placeholder {
+      color: var(--color-basalt-grey);
+    }
+
+    &.focus-visible::placeholder {
+      color: var(--color-basalt-grey);
+    }
+  }
+}
+
+@media (max-width: 530px) {
+  .input {
+    padding-top: 11px;
+    padding-bottom: 11px;
+
+    font-size: 14px;
+
+    &::placeholder {
+      font-size: 14px;
+    }
+  }
+}

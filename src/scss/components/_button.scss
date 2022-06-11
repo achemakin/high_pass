@@ -1,0 +1,48 @@
+.btn {
+  display: inline-block;
+  padding: 12px 18px;
+  font-weight: 700;
+  border: 3px solid transparent;
+  color: var(--light-color);
+  background-color: transparent;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+  &--primary {
+    background-color: var(--color-bright-orange);
+    border-color: var(--color-bright-orange);
+
+    &:hover:not(.focus-visible) {
+      background-color: var(--color-beef-patties);
+      border-color: var(--color-beef-patties);
+    }
+
+    &:active:not(.focus-visible) {
+      background-color: var(--color-sinopia);
+      border-color: var(--color-sinopia);
+    }
+
+    &.focus-visible {
+      border-color: var(--color-sinopia);
+    }
+  }
+
+  &--secondary {
+    border-color: var(--color-bright-orange);
+
+    &:hover:not(.focus-visible) {
+      background-color: var(--color-bright-orange);
+    }
+
+    &:active:not(.focus-visible) {
+      background-color: var(--color-sinopia);
+      border-color: var(--color-sinopia);
+    }
+
+    &.focus-visible {
+      background-color: var(--color-beef-patties);
+    }
+  }
+}

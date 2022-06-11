@@ -1,0 +1,130 @@
+.about {
+  padding-top: 32px;
+  padding-bottom: 70px;
+  background-color: var(--color-lead);
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  &__title {
+    color: var(--light-color);
+  }
+
+  &__description {
+    margin: 0;
+    padding-top: 6px;
+    color: var(--color-leadbelcher);
+    line-height: 28px;
+  }
+
+  &__form {
+    background-image: url("../img/about/camera.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 2px;
+    background-size: contain;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+}
+
+@include tablet {
+  .about {
+    padding-bottom: 58px;
+
+    &__form {
+      padding-bottom: 22px;
+      background-image: url(../img/about/camera-tablet.jpg);
+    }
+
+    &__description {
+      padding-right: 5px;
+    }
+  }
+}
+
+@include small-tablet {
+  .about {
+    padding-bottom: 62px;
+
+    &__form {
+      padding-bottom: 9px;
+      background-image: url(../img/about/camera-small-tablet.jpg);
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .about {
+    padding-top: 34px;
+    padding-bottom: 50px;
+
+    &__wrapper {
+      display: block;
+    }
+
+    &__description {
+      padding-right: 0;
+      font-size: 14px;
+      line-height: 25px;
+    }
+
+    &__form {
+      padding-top: 326px;
+      background-image: url(../img/about/camera-tel.jpg);
+      background-position: 0 22px;
+      background-size: auto;
+    }
+  }
+}
+
+.form-about {
+  &__title {
+    margin-bottom: 14px;
+    color: var(--light-color);
+    font-weight: 400;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 32px;
+  }
+
+  &__label {
+    flex-grow: 1;
+  }
+}
+
+@include tablet {
+  .form-about {
+    &__wrapper {
+      display: block;
+    }
+
+    &__label {
+      display: block;
+      max-width: 342px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .form-about {
+    &__title {
+      margin-bottom: 15px;
+    }
+
+    &__btn {
+      padding-top: 9px;
+      padding-bottom: 9px;
+      font-size: 14px;
+    }
+  }
+}

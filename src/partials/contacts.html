@@ -1,0 +1,50 @@
+<section class="contacts" id="contacts">
+  <div class="container contacts__container">
+    <h2 class="title contacts__title">Контакты</h2>
+
+    <div class="contacts__wrapper">
+      <div class="contacts__map" id="contacts-map">
+
+        <div class="contacts__adress adress js-adress">
+          <h3 class="title adress__title">Студия “High pass”</h3>
+
+          <address class="adress__text">107045, Москва, Даев переулок, дом 41, бизнес-центр «Даев Плаза», этаж 8,
+            офис&nbsp;№&nbsp;82
+          </address>
+
+          <a href="tel:+749542423532" class="adress__tel">
+            <svg class="adress__svg" width="22" height="22">
+              <use xlink:href="img/sprite.svg#mdi_call"></use>
+            </svg>
+            +7 (495) 42-423-532
+          </a>
+
+          <button class="adress__button js-btn-adress" type="button" aria-label="Кнопка закрыть">
+            <span>&#8657;</span>
+          </button>
+        </div>
+      </div>
+
+      <form action="#" class="contacts__form form-contacts js-form-contacts">
+        <h3 class="title form-contacts__title">Оставить заявку</h3>
+
+        <p class="form-contacts__descr">Оставьте ваши данные, указав в графе &#8220;Комментарий&#8221; желаемые время
+          и дату съемки или другого мероприятия</p>
+
+        <label class="form-label form-contacts__label">
+          <input type="text" class="input input--light form-contacts__input" name="name" placeholder="Имя" required>
+        </label>
+
+        <label class="form-label form-contacts__label">
+          <input type="email" class="input input--light form-contacts__input" name="email" placeholder="E-mail"
+            required>
+        </label>
+
+        <textarea name="comments" cols="30" rows="10" class="input input--light form-contacts__textarea"
+          placeholder="Комментарий"></textarea>
+
+        <button class="btn btn--primary form-contacts__btn" type="submit">Отправить</button>
+      </form>
+    </div>
+  </div>
+</section>

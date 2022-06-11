@@ -1,0 +1,42 @@
+.tel {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  font-family: "TTFirsNeue";
+  color: var(--color-bright-orange);
+  font-size: 14px;
+  outline: none;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+  &__svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--color-bright-orange);
+    transition: fill 0.3s ease-in-out;
+  }
+
+  &:hover:not(.focus-visible) {
+    color: var(--light-color);
+
+    .tel__svg {
+      fill: var(--light-color);
+    }
+  }
+
+  &:active:not(.focus-visible) {
+    color: var(--color-sinopia);
+
+    .tel__svg {
+      fill: var(--color-sinopia);
+    }
+  }
+
+  &.focus-visible {
+    background-color: var(--color-simple-delicious);
+    color: var(--color-lead);
+
+    .tel__svg {
+      fill: var(--color-lead);
+    }
+  }
+}
